@@ -75,7 +75,9 @@ Los usuarios se benefician al poder llegar a nuevos públicos, y a su vez, el p�
 
 ## Miembros del Equipo
 
-- **Damian Orellano**: Product Owner, Developer.
+- Damian Orellano
+- Camila Mancini
+- Cabrera Ivo
 
 ## Stack Tecnológico
 
