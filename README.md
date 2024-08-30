@@ -56,9 +56,9 @@ Desarrollar una plataforma web inmersiva que permita a artistas emergentes expon
 
 ## Sponsor del Proyecto
 
-Damian Orellano
-Camila Mancini
-Cabrera Ivo
+- Damian Orellano
+- Camila Mancini
+- Cabrera Ivo
 
 ## Stakeholders/Usuarios
 
