@@ -1,11 +1,10 @@
-import './App.css';
-
+import React from 'react';
+import { Gallery } from './components/Galeria/Gallery';
 function App() {
   return (
-      <div className='centrar'>
-        <h1>Primer commit Vr Gallery Damian Orellano</h1>
-        <h3>2024</h3>
-      </div>
+    <div className="App">
+      <Gallery />
+    </div>
   );
 }
 
