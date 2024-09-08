@@ -10,16 +10,34 @@ export function Gallery() {
     };
     const girarDerecha = () => {
         setRotacion(rotacion + 90); // Rota 90 grados para la derecha
-    }
+    };
     return (
         <div className="contenedor">
             <div className="habitacion" style={{ transform: `rotateY(${rotacion}deg)` }}>
                 <div className="pared-frontal">
-                    
+                    <div className="flechas">
+                        <div id="arrow-left" onClick={girarIzquierda}></div>
+                        <div id="arrow-right" onClick={girarDerecha}></div>
+                    </div>
                 </div>
-                <div className="pared pared-trasera"></div>
-                <div className="pared pared-derecha"></div>
-                <div className="pared pared-izquierda"></div>
+                <div className="pared pared-trasera">
+                    <div className="flechas">
+                        <div id="arrow-left" onClick={girarIzquierda}>hoalsdls</div>
+                        <div id="arrow-right" onClick={girarDerecha}></div>
+                    </div>
+                </div>
+                <div className="pared pared-derecha">
+                    <div className="flechas">
+                        <div id="arrow-left" onClick={girarIzquierda}></div>
+                        <div id="arrow-right" onClick={girarDerecha}></div>
+                    </div>
+                </div>
+                <div className="pared pared-izquierda">
+                    <div className="flechas">
+                        <div id="arrow-left" onClick={girarIzquierda}></div>
+                        <div id="arrow-right" onClick={girarDerecha}></div>
+                    </div>
+                </div>
                 {/* -----REALMENTE NO ES NECESARIO EL TECHO Y SUELO-------- */}
                 {/* <div className="suelo"></div>
                 <div className="techo"></div> */}
