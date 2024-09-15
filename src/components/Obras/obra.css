@@ -1,0 +1,20 @@
+.contenedor_obras{
+    perspective: 500px;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+
+}
+
+
+.obra{
+    margin:auto ;
+    width: 250px;
+    height: 400px;
+    background-color: blue;
+    position: relative;
+    border: 10px solid black;
+}

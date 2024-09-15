@@ -33,7 +33,7 @@ body {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background-color: rgb(255, 0, 0);
+    /* background-color: rgb(255, 0, 0); */
     border: 1px solid black;
 }
 
@@ -43,28 +43,32 @@ body {
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: blue;
+    /* background-color: blue; */
     display: flex;
     align-items: center;
     justify-content: center;
+    border:1px solid black ;
 }
 
 /* ------PARED TRASERA------------ */
 .pared-trasera {
     transform: rotateY(180deg) translateZ(50vw);
-    background-color: rgb(255, 187, 0);
+    /* background-color: rgb(255, 187, 0); */
+    border:1px solid black 
 }
 
 /* ------PARED DERECHA------------ */
 .pared-derecha {
     transform: rotateY(90deg) translateZ(50vw);
-    background-color: rgb(255, 0, 0);
+    /* background-color: rgb(255, 0, 0); */
+    border:1px solid black 
 }
 
 /* ------PARED IZQUIERDA------------ */
 .pared-izquierda {
     transform: rotateY(-90deg) translateZ(50vw);
-    background-color: rgb(51, 255, 0);
+    /* background-color: rgb(51, 255, 0); */
+    border:1px solid black 
 
 }
 
@@ -87,9 +91,10 @@ body {
 /* --------ESTILO PARA LOS CONTROLES----------- */
 .controles {
     position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 200%;
+    justify-content: center;
 }
 
 .controles button {
@@ -99,44 +104,56 @@ body {
     cursor: pointer;
 }
 
+#arrow-left{
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-image: url(/public/img/izquierda.png);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    
+}
+
+#arrow-right{
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    transform: rotate(180deg);
+    background-image: url(/public/img/izquierda.png);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+#arrow-left:hover{
+    opacity: 1;
+}
+
+#arrow-right:hover{
+    opacity: 1;
+}
+
 /*---------OCULTO BARRA DE SCROLL--------------*/
 ::-webkit-scrollbar {
     display: none;
 }
 
-.flechas{
-    display: flex;
-    align-items: center;
+.contenedor_obras{
+    perspective: 500px;
+    width: 100vw;
+    height: 100vh;
     position: absolute;
-    
-}
-#arrow-left{
-    width: 150px;
-    height: 150px;
-    background-size: cover;
-    transform: translateX(50vw) rotateY(180deg);
-    background-image: url(/public/img/izquierda.png);
-    opacity: 1;
-    transition: all 0.5s ease-in-out;
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+
 }
 
-#arrow-left:hover{
-    opacity: 1;
-    cursor: pointer;
-}
 
-#arrow-right{
-    width: 150px;
-    height: 150px;
-    background-size: cover;
-    transform: translateX(-50vw);
-    background-image: url(/public/img/izquierda.png);
-    opacity: 1;
-    transition: all 0.5s ease-in-out;
-}
-
-#arrow-right:hover{
-    opacity: 1;
-    cursor: pointer;
+.obra{
+    margin:auto ;
+    width: 250px;
+    height: 400px;
+    background-color: blue;
+    position: relative;
+    border: 10px solid black;
 }
