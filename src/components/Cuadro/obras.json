@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "nombre_obra": "pintura 1",
+        "artista": "artista 1",
+        "thumbnail": "./public/img/obras/pintura 1.jpg"
+    },
+    {
+        "id": 2,
+        "nombre_obra": "pintura 2",
+        "artista": "artista 2",
+        "thumbnail": "./public/img/obras/pintura 2.jpg"
+    },
+    {
+        "id": 3,
+        "nombre_obra": "pintura 3",
+        "artista": "artista 3",
+        "thumbnail": "./public/img/obras/pintura 3.jpg"
+    },
+    {
+        "id": 4,
+        "nombre_obra": "pintura 4",
+        "artista": "artista 4",
+        "thumbnail": "./public/img/obras/pintura 4.jpg"
+    },
+    {
+        "id": 5,
+        "nombre_obra": "pintura 5",
+        "artista": "artista 5",
+        "thumbnail": "./public/img/obras/pintura 5.jpg"
+    },
+    {
+        "id": 6,
+        "nombre_obra": "pintura 6",
+        "artista": "artista 6",
+        "thumbnail": "./public/img/obras/pintura 6.jpg"
+    },
+    {
+        "id": 7,
+        "nombre_obra": "pintura 7",
+        "artista": "artista 7",
+        "thumbnail": "./public/img/obras/pintura 7.jpg"
+    },
+    {
+        "id": 8,
+        "nombre_obra": "pintura 8",
+        "artista": "artista 8",
+        "thumbnail": "./public/img/obras/pintura 8.jpg"
+    },
+    {
+        "id": 9,
+        "nombre_obra": "pintura 9",
+        "artista": "artista 9",
+        "thumbnail": "./public/img/obras/pintura 9.jpg"
+    },
+    {
+        "id": 10,
+        "nombre_obra": "pintura 10",
+        "artista": "artista 10",
+        "thumbnail": "./public/img/obras/pintura 10.jpg"
+    },
+    {
+        "id": 11,
+        "nombre_obra": "pintura 11",
+        "artista": "artista 11",
+        "thumbnail": "./public/img/obras/pintura 11.jpg"
+    },
+    {
+        "id": 12,
+        "nombre_obra": "pintura 12",
+        "artista": "artista 12",
+        "thumbnail": "./public/img/obras/pintura 12.jpg"
+    }
+]

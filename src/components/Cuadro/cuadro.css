@@ -1,0 +1,24 @@
+
+.obra {
+    margin: 3%; /*  espacio entres obras */
+    width: 20vw;
+    height: 70vh;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    border: 5px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.obra:hover {
+    transform: scale(1.2);
+    border-color: rgb(255, 255, 255);
+}
+
+.thumbnail {
+    width: 100%;
+    height: auto; 
+    border-bottom: 5px solid black;
+}
