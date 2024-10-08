@@ -109,8 +109,8 @@ body {
     width: 100px;
     height: 100px;
     background-size: cover;
-    background-image: url(/public/img/izquierda.png);
-    opacity: 0;
+    background-image: url(/public/img/assets/izquierda.png);
+    opacity: 1;
     transition: all 0.5s ease-in-out;
     
 }
@@ -121,7 +121,7 @@ body {
     background-size: cover;
     transform: rotate(180deg);
     background-image: url(/public/img/assets/izquierda.png);
-    opacity: 0;
+    opacity: 1;
     transition: all 0.5s ease-in-out;
 }
 

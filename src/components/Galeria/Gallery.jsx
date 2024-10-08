@@ -1,33 +1,32 @@
 import { useState } from "react";
 import "./gallery.css";
-import { Obras } from "../Obras/Pared";
+import { Obras } from "../Obras/Obras";
+
 export function Gallery() {
-    //----------------------FX QUE GIRA LA HABITACION-----------------------------------
     const [rotacion, setRotacion] = useState(0);
+
     const girarIzquierda = () => {
         setRotacion(rotacion - 90); // Rota 90 grados para la izquierda
     };
     const girarDerecha = () => {
         setRotacion(rotacion + 90); // Rota 90 grados para la derecha
     };
+
     return (
         <div className="contenedor">
             <div className="habitacion" style={{ transform: `rotateY(${rotacion}deg)` }}>
                 <div className="pared-frontal">
-                    <Obras></Obras>
+                    <Obras paresinha={0} />
                 </div>
                 <div className="pared pared-trasera">
-                    <Obras></Obras>
+                    <Obras paresinha={1} />
                 </div>
                 <div className="pared pared-derecha">
-                    <Obras></Obras>
+                    <Obras paresinha={2} />
                 </div>
                 <div className="pared pared-izquierda">
-                    <Obras></Obras>
+                    <Obras paresinha={3} />
                 </div>
-                {/* -----REALMENTE NO ES NECESARIO EL TECHO Y SUELO-------- */}
-                {/* <div className="suelo"></div>
-                <div className="techo"></div> */}
             </div>
             <div className="controles">
                 <div onClick={girarIzquierda} id="arrow-left"></div>
@@ -36,3 +35,40 @@ export function Gallery() {
         </div>
     );
 }
+
+// CODIGO VIEJO NO SIRVE, AL FINAL EL ERROR ERA QUE SE ESTABA SOBREPONIENDO, EXPLICADO MEJOR EN EL README
+// export function Gallery() {
+//     //----------------------FX QUE GIRA LA HABITACION-----------------------------------
+//     const [rotacion, setRotacion] = useState(0);
+//     const girarIzquierda = () => {
+//         setRotacion(rotacion - 90); // Rota 90 grados para la izquierda
+//     };
+//     const girarDerecha = () => {
+//         setRotacion(rotacion + 90); // Rota 90 grados para la derecha
+//     };
+//     return (
+//         <div className="contenedor">
+//             <div className="habitacion" style={{ transform: `rotateY(${rotacion}deg)` }}>
+//                 <div className="pared-frontal">
+//                     <Obras></Obras>
+//                 </div>
+//                 <div className="pared pared-trasera">
+//                     <Obras></Obras>
+//                 </div>
+//                 <div className="pared pared-derecha">
+//                     <Obras></Obras>
+//                 </div>
+//                 <div className="pared pared-izquierda">
+//                     <Obras></Obras>
+//                 </div>
+//                 {/* -----REALMENTE NO ES NECESARIO EL TECHO Y SUELO-------- */}
+//                 {/* <div className="suelo"></div>
+//                 <div className="techo"></div> */}
+//             </div>
+//             <div className="controles">
+//                 <div onClick={girarIzquierda} id="arrow-left"></div>
+//                 <div onClick={girarDerecha} id="arrow-right"></div>
+//             </div>
+//         </div>
+//     );
+// }
