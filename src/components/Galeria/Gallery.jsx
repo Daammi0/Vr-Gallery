@@ -1,17 +1,32 @@
 import { useState } from "react";
+import { useEffect } from "react";
 import "./gallery.css";
-import { Obras } from "../Obras/Obras";
+import Obras from "../Obras/Obras";
+
+
 
 export function Gallery() {
     const [rotacion, setRotacion] = useState(0);
-
     const girarIzquierda = () => {
         setRotacion(rotacion - 90); // Rota 90 grados para la izquierda
     };
     const girarDerecha = () => {
         setRotacion(rotacion + 90); // Rota 90 grados para la derecha
     };
-
+    //funcion para manejar la direccion con el teclado
+    const girarTeclado = (event) => {
+        if (event.key == "a" || event.key == "A") {
+            girarIzquierda();
+        } else if (event.key == "d" || event.key == "D") {
+            girarDerecha();
+        }
+    };
+    useEffect(() => {
+        window.addEventListener("keydown", girarTeclado);
+        return () => {
+            window.removeEventListener("keydown", girarTeclado);
+        };
+    });
     return (
         <div className="contenedor">
             <div className="habitacion" style={{ transform: `rotateY(${rotacion}deg)` }}>
@@ -35,6 +50,41 @@ export function Gallery() {
         </div>
     );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // CODIGO VIEJO NO SIRVE, AL FINAL EL ERROR ERA QUE SE ESTABA SOBREPONIENDO, EXPLICADO MEJOR EN EL README
 // export function Gallery() {

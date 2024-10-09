@@ -15,10 +15,10 @@
 .obra:hover {
     transform: scale(1.2);
     border-color: rgb(255, 0, 0);
+    cursor: pointer;
 }
 
 .thumbnail {
     width: 100%;
-    height: auto; 
-    border-bottom: 5px solid black;
+    height: 100%; 
 }

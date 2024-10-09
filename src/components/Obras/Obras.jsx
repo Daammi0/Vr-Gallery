@@ -1,9 +1,10 @@
+/* eslint-disable react/prop-types */
 // Obras.jsx
 import "./obra.css";
 import { Cuadro } from "../Cuadro/Cuadro";
 import products from "../Cuadro/obras.json";
 
-export function Obras({ paresinha }) {
+export default function Obras({ paresinha }) {
   // Dividimos las obras en grupos de 3 para cada pared
   const obrasPorPared = [
     products.slice(0, 3),  // Pared frontal
@@ -11,9 +12,7 @@ export function Obras({ paresinha }) {
     products.slice(6, 9),  // Pared derecha
     products.slice(9, 12), // Pared izquierda
   ];
-
   const obrasActuales = obrasPorPared[paresinha]; // Selecciona las obras según la pared
-
   return (
     <div className={`pared pared-${paresinha}`}>
       {obrasActuales.map((element) => (
@@ -28,6 +27,7 @@ export function Obras({ paresinha }) {
     </div>
   );
 }
+
 
 
 // CODIGO VIEJOOOOOOOOOOOOOOOOOOOOOOOOOOO
